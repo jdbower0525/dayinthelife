@@ -5,7 +5,9 @@ from django.contrib.auth.models import User
 
 
 class Choice(models.Model):
-    text = models.CharField(max_length=255)
+    # text = models.CharField(max_length=255)
+    def __str__(self):
+        return self.id
 
 
 class Student(models.Model):

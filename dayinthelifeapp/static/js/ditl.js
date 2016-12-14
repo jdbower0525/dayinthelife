@@ -29,29 +29,25 @@ $.ajaxSetup({
     }
 });
 
-// DELETE //
-function removeChoices(){
-    var id = $('#username_field').val()
-    $.getJSON( "/api/student/" + id, function(student) {
-        var patchData = {'choices':[]}
-        jQuery.ajax({
-            url:'/api/student/' + j + '/',
-            data:patchData,
-            dataType: 'jsonp',
-            type:'PATCH'
-        }).done(function())
-    }
+function doThings(){
+    id = 1
+    var patchData = {
+        user: 1,
+        choices: [1,2,3]
 }
+    // var patchData = new FormData();
+    // form.append("user", "1");
+    // form.append("choices", "1");
+    // form.append("choices", "4");
 
-function addChoice(){
-    var id = $('#username_field').val()
-    $.getJSON( "/api/student/" + id, function(student) {
-        var newchoice = document.getElementById("getChoice").value
-        var choices = student.choices
-        var patchData = {'choices':[choices + newchoice]}
-        jQuery.ajax({url:'/api/student/' +  id + '/',
-            data:patchData,
-            dataType: 'jsonp',
-            type:'PATCH'
-        }).done(function())
-})}
+
+    var ajaxdata = {
+        url: '/api/student/' + id + '/',
+        data: { user: 1, choice: [1,2] },
+        dataType: 'application/json',
+        type: 'PUT'
+    }
+    console.log(ajaxdata)
+    $.ajax(ajaxdata).done(function(results){console.log(results)})
+}
+doThings()

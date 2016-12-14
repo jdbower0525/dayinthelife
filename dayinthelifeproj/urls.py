@@ -22,7 +22,7 @@ import dayinthelifeapp
 
 router = routers.DefaultRouter()
 router.register(r'api/student', views.StudentViewSet),
-router.register(r'api/choice', views.ChoiceViewSet)
+router.register(r'api/choice', views.ChoiceViewSet),
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.

@@ -4,16 +4,17 @@ from .models import Choice
 from django.contrib.auth.models import User
 
 
-class StudentSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Student
-        fields = ['user', 'url', 'choices']
-
-
 class ChoiceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Choice
         fields = ['id', 'text']
+
+
+class StudentSerializer(serializers.ModelSerializer):
+    # choices = ChoiceSerializer(many=True)
+    class Meta:
+        model = Student
+        fields = ['id', 'user', 'url', 'choices']
 
 
 class UserSerializer(serializers.ModelSerializer):
