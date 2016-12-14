@@ -1,0 +1,68 @@
+@font-face {
+ font-family: "TisaPro-Bold";
+ src: url("../TisaPro-Bold.otf"); }
+body {
+ font-family: sans-serif;
+ margin: 10%;
+ margin-top: 5%;
+ text-align: center;
+ color: white;
+ background-image: linear-gradient(rgba(57, 71, 78, 0.6), rgba(57, 71, 78, 0.6)), url("../../media/stairs.jpg");
+ background-size: cover;
+ background-attachment: fixed;
+ height: 0px; }
+ body .logo {
+   height: 150px; }
+ body main {
+   position: relative;
+   bottom: 130px; }
+   body main h1 {
+     font-family: "TisaPro-Bold";
+     font-size: 50px;
+     text-align: center;
+     margin-top: 210px;
+     margin-bottom: 10px; }
+   body main .border {
+     border-top: 3px solid #96d1bd ;
+     border-bottom: 3px solid #96d1bd ;
+     padding: 2%; }
+     body main .border .paragraph {
+       font-size: 24px;
+       font-family: "Didact Gothic", sans-serif;
+       line-height: 20px;
+       text-align: left;
+       padding-bottom: 5px;
+       padding-top: 40px;
+       overflow: hidden;
+       border-right: .15em solid orange;
+       white-space: nowrap;
+       margin: 0 auto;
+       letter-spacing: .15em;
+       animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+   body main h3 {
+     font-size: 30px; }
+   body main button {
+     height: 50px;
+     width: auto;
+     color: white;
+     background-color: #96d1bd ;
+     font-weight: 900;
+     font-size: 25px;
+     padding: 2%;
+     padding-bottom: 5%;
+     border: none;
+     text-align: center;
+     margin: 50px 0; }
+   body main button:hover {
+     background-color: #39474e ; }
+
+@keyframes typing {
+ from {
+   width: 0; }
+ to {
+   width: 100%; } }
+@keyframes blink-caret {
+ from, to {
+   border-color: transparent; }
+ 50% {
+   border-color: orange; } }

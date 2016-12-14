@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        user interface HELLO WORLD
-        <a href='/dayinthelifeapp/story'>STORY</a>
-    </body>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lina's Hackathon Pages</title>
+    <link rel="stylesheet" href= "https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/uihello.css' %}">
+  </head>
+  <body>
+  <section>
+    <img class="ironlogo" src="../../media/Dayinthelifelogo.png">
+  </section>
+    <div class="adventureoptions">
+      <div class="enterbuilding">
+        <p id="beforetext">hello world...</p>
+        <p id="aftertext">hello world!</p>
+        <p class="lesson">Have you ever wondered how the text on the Internet can look so cool?
+          Take a look at your "hello world" text above. Boring, right?
+          To make our text amazing, let's "close" our &lt h1 &gt with a closing tag and see what happens!</p>
+        <p class="helloworld">&lt h1 &gt hello world</p>
+        <form id='lessoncomplete'>
+            <input type='text' id='testinput'>
+        </form>
+        <div><button type="button" id='clickButton'>Submit</button>
+        <p id="wrong">Oops! That's not right.<br> Remember, you need all of these symbols in the answer: < />. <br>Try again!<br> <a href='/dayinthelifeapp/uihello'><button class="popupbutton">I got this</button></a> </p>
+        <p id="right">NICE! You learned some HTML today! <a href='/dayinthelifeapp/story'><button class="popupbutton">See how your day went</button></a> </p>
+      </div>
+    </div>
+  <footer></footer>
+    <input hidden id="studentid" value='{{user.id}}'>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/uihello.js' %}"></script>
+
 </html>

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'TisaPro-Bold';
+  src: url("../Tisa/TisaPro-Bold.otf"); }
+body {
+  margin: 5%;
+  background-image: url("../../media/asanoha.png"); }
+
+.boardtext {
+  color: #39474e;
+  font-family: "Didact Gothic", sans-serif;
+  position: absolute;
+  top: 21%;
+  left: 30%; }
+  .boardtext p {
+    font-size: 45px;
+    font-weight: bolder; }
+
+.backtostart {
+  height: 130px;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 37%;
+  box-sizing: border-box; }
+
+.backtostart:hover {
+  border: 4px solid #62a6bb;
+  border-radius: 100%; }
+
+.ironlogo {
+  height: 140px;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 10%; }
+
+button {
+  height: 50px;
+  width: auto;
+  color: white;
+  background-color: #96d1bd;
+  font-weight: 900;
+  font-size: 25px;
+  padding: 2% 4%;
+  border: none;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif; }
+
+button:hover {
+  background-color: #39474e; }
+
+.enter {
+  height: 500px;
+  width: 650px;
+  margin: 0 auto;
+  background-image: url("../../media/lexilearn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 15px solid #96d1bd;
+  position: relative; }
+
+.adventureoptions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .adventureoptions .enterbuilding {
+    height: 450px;
+    width: 650px;
+    border: 5px solid #39474e;
+    font-weight: 600;
+    text-align: center;
+    margin: 5%;
+    background-color: white; }
+    .adventureoptions .enterbuilding p {
+      text-align: left;
+      padding-left: 2%;
+      font-size: 24px;
+      line-height: 1.6;
+      font-family: "Didact Gothic", sans-serif;
+      color: #39474e; }
+
+footer .startagain {
+  position: relative;
+  bottom: 0%;
+  left: 43%;
+  padding: 1%; }
+
+/*# sourceMappingURL=learnlexi.css.map */

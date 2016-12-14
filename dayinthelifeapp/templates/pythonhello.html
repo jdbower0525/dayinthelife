@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <meta charset="utf-8">
         <title></title>
     </head>
     <body>
-        python hello world boys
-        <a href='/dayinthelifeapp/story'>STORY</a>
+        python hello world page
+        <a href='/dayinthelifeapp/story' id="storyButton">story</a>
+    <input hidden id="studentid" value='{{user.id}}'>
     </body>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/uihello.js' %}"></script>
 </html>

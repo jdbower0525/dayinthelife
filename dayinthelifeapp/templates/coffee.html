@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        coffee
-        <a href='/dayinthelifeapp/gotoclass'>morning times</a>
-        <a href='/dayinthelifeapp/gotoclass'>joule</a>
-    </body>
+{% load static %}
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>Register</title>
+   <link rel='icon' href="../../media/Dayinthelifelogo.png" type='image/png'/>
+   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+   <link rel="stylesheet" href="{% static '/css/coffee.css' %}">
+ </head>
+ <body>
+
+
+<div class="logoBox">
+ <img src="../../media/Dayinthelifelogo.png">
+ <div class="welcome">
+   <h1>Good thing there are two great coffee shops around the corner!</h1>
+ </div>
+</div>
+
+
+<div class="coffeeImages">
+ <div class="MT">
+     <p>MORNING TIMES</p>
+ <img src="../../media/morningtimes.jpg">
+ <br>
+   <a href='/dayinthelifeapp/gotoclass' id="morningButton"><button class="button button1">Morning Times</button></a>
+   <h3>Located on Hargett street<br>919-867-5309</h3>
+</div>
+<div class="joule">
+ <p>JOULE</p>
+ <img src="../../media/joule.jpg">
+ <br>
+   <a href='/dayinthelifeapp/gotoclass' id="joulesButton"><button class="button button2">Joule</button></a>
+     <h3>Located on Wilmington street<br>919-867-5309</h3>
+</div>
+</div>
+    <input hidden id="studentid" value='{{user.id}}'>
+</body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/coffee.js' %}"></script>
 </html>

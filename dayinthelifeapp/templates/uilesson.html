@@ -1,11 +1,45 @@
 <!DOCTYPE html>
+{% load static %}
+
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        user interface LESSON
-        <a href='/dayinthelifeapp/uihello'>ui hello</a>
-    </body>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel='icon' href="../../media/Dayinthelifelogo.png" type='image/png'/>
+   <link src ="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+   <link href ="{% static '/css/uilesson.css' %}" type ="text/css" rel ="stylesheet">
+   <title></title>
+ </head>
+ <body>
+
+ <img class ="logo" src ="../../media/Dayinthelifelogo.png">
+
+   <main>
+     <h1>Lesson</h1>
+       <div class ="border">
+         <section class ="paragraph">
+           <p>Good morning class! Today we will be learning the basics of
+           HTML.</p>
+           <p>HTML stands for Hyper Text Markup Language. This is just a fancy way</p>
+           <p>to describe links. This concept is at the core of the world wide web and</p>
+           <p>without HTML you can not have a web page. Think of it like the skeleton</p>
+           <p>of a web page. This skeleton is made up of elements, or tags.</p>
+           <p>Within these tags is where the content of the page is stored.</p>
+           <p>Here is an example of an opening and a closing tag: &lth1&gt&lt/h1&gt</p>
+         </section>
+       </div>
+
+     <h3>Ready to try it yourself?</h3>
+     <a href='/dayinthelifeapp/uihello' id="uihelloButton"><button>I'm Ready!</button></a>
+     <a href='/dayinthelifeapp/'><button>Start Over</button></a>
+    </main>
+    <input hidden id="studentid" value='{{user.id}}'>
+ </body>
+ <script
+ src="https://code.jquery.com/jquery-3.1.1.min.js"
+ integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+ crossorigin="anonymous"></script>
+ <script type="text/javascript" src="{% static 'js/uilesson.js' %}"></script>
 </html>

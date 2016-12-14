@@ -1,11 +1,47 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        user interface page
-        <a href='/dayinthelifeapp/uilesson'>ui lesson</a>
-    </body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lexi Introduction</title>
+    <link rel='icon' href="../../media/Dayinthelifelogo.png" type='image/png'/>
+    <link rel="stylesheet" href= "https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/userinterface.css' %}">
+  </head>
+  <body>
+  <section>
+    <img class="ironlogo" src="../../media/Dayinthelifelogo.png">
+    <div class="enter">
+      <div class="boardtext">
+        <p> Hi! I'm Lexi, <br>
+          your instructor!</p>
+      </div>
+    </div>
+  </section>
+    <div class="adventureoptions">
+      <div class="enterbuilding">
+        <p> UI Design was a great choice!
+            <br>
+            <br>
+            In my class, we learn everything from color theory to jQuery. You'll be creating wireframes and mockups working in Illustrator and Photoshop, as well as diving into code and making beautiful, responsive websites. I'm glad you joined! Let's jump right into learning.
+            <br>
+            <br>
+            Are you ready?
+        </p>
+        <a href='/dayinthelifeapp/uilesson' id="uilessonButton"><button>I'm ready to learn!</button></a>
+        </div>
+      </div>
+    <footer> <a href="/dayinthelifeapp/"><button class="startagain">Start Again</button></a></footer>
+    <input hidden id="studentid" value='{{user.id}}'>
+  </body>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/userinterface.js' %}"></script>
 </html>

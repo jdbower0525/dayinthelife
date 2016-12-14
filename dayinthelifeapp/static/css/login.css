@@ -1,0 +1,117 @@
+body {
+  background-image: url(../images/brickwall.JPEG);
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  object-fit: cover; }
+
+.logoBox {
+  width: 100%;
+  height: 500px;
+  padding-top: 5%; }
+
+.logoBox img {
+  height: 450px;
+  width: auto;
+  display: block;
+  margin: auto; }
+
+.style-1 input[type="text"] {
+  padding-bottom: 10px;
+  border: solid 5px #cfd13f;
+  transition: border 0.3s; }
+
+.style-1 input[type="text"]:focus {
+  border: solid 5px #96d1bd;
+  padding-bottom: 10px; }
+
+.style-1 input[type="text"].focus {
+  border: solid 5px #96d1bd;
+  padding-bottom: 10px; }
+
+.input-list li {
+  padding-bottom: 40px;
+  width: 100px;
+  height: 40px; }
+
+input {
+  font-size: 20px; }
+
+.input-list, .style-1, .clearfix, ul {
+  width: 250px;
+  height: auto;
+  margin: auto;
+  display: block; }
+
+p {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer; }
+
+.button1 {
+  background-color: white;
+  color: #39474e;
+  border: 5px solid #912f58;
+  display: inline-block;
+  margin-left: 41%; }
+
+.button1:hover {
+  background-color: #912f58;
+  color: white; }
+
+.button2 {
+  background-color: white;
+  color: #39474e;
+  border: 5px solid #62a6bb; }
+
+.button2:hover {
+  background-color: #62a6bb;
+  color: white; }
+
+@media (max-width: 767px) {
+  p {
+    font-size: 24px; }
+
+  .input-list li {
+    padding-bottom: 20px;
+    width: 80px;
+    height: 20px; }
+
+  input {
+    font-size: 16px; }
+
+  .input-list, .style-1, .clearfix, ul {
+    width: 100px;
+    height: auto;
+    margin-left: 23%;
+    display: block; }
+
+  button {
+    margin-top: 50px; }
+
+  .button1 {
+    background-color: white;
+    color: #39474e;
+    border: 5px solid #912f58;
+    display: inline-block;
+    margin-left: 23%; } }
+
+/*# sourceMappingURL=style.css.map */

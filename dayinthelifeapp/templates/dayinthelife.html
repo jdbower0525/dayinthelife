@@ -5,7 +5,8 @@
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Lina's Hackathon Pages</title>
+        <title>First Day at the Iron Yard</title>
+        <link rel='icon' href="../../media/Dayinthelifelogo.png" type='image/png'/>
         <link rel="stylesheet" href= "https://necolas.github.io/normalize.css/5.0.0/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
         <link rel="stylesheet" href="{% static '/css/index.css' %}">
@@ -23,18 +24,17 @@
         <div class="adventureoptions">
           <div class="enterbuilding">
             <p> I'm ready, let's do this! </p>
-            <a href='/dayinthelifeapp/gotoclass'><button>Come on in!</button></a>
+            <a href='/dayinthelifeapp/gotoclass' id='classButton'><button>Come on in!</button></a>
           </div>
           <div class="coffee">
             <p> Cool,<br> but I need some coffee first! </p>
-            <a href='/dayinthelifeapp/gotoclass'><button>Caffeinate</button></a>
+            <a href='/dayinthelifeapp/coffee' id='coffeeButton'><button>Caffeinate</button></a>
           </div>
         </div>
       <footer> <button hidden class="startagain">Start Again</button></footer>
-        <input hidden id="studentid" value='{{user.id}}'>
-
+    <input hidden id="studentid" value='{{user.id}}'>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{% static '/js/ditl.js' %}"></script>
+    <script type="text/javascript" src="{% static '/js/ditl0.js' %}"></script>
 
 </html>

@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'TisaPro-Bold';
+  src: url("../TisaPro-Bold.otf"); }
+body {
+ background-image: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.8)), url(../../media/wallc.jpg);
+ background-position: center;
+ object-fit: fill; }
+
+h1 {
+ font-size: 50px;
+ color: white;
+ font-family: 'Didact Gothic', sans-serif; }
+
+.logoBox {
+ display: flex;
+ justify-content: left;
+ align-content: space-between;
+ flex-wrap: wrap;
+ flex-direction: row;
+ width: 100%;
+ height: 200px;
+ padding-top: 2%; }
+
+.logoBox h1 {
+ width: 700px;
+ padding-left: 15%; }
+
+.logoBox img {
+ height: 200px;
+ width: auto;
+ display: block;
+ margin-left: 5%; }
+
+.coffeeImages {
+ padding-top: 2%;
+ height: 800px;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-content: space-between .5%;
+ flex-wrap: wrap;
+ flex-direction: column; }
+
+.coffeeImages img {
+ width: 700px;
+ height: 500px;
+ padding: 2%;
+ border: 5px solid #96d1bd ;
+ box-sizing: border-box; }
+
+p {
+ text-align: center;
+ color: white;
+ font-family: 'Didact Gothic', sans-serif;
+ font-size: 30px;
+ font-weight: bolder; }
+
+button {
+ margin-left: 40%;
+ margin-top: 2%;
+ height: 50px;
+ width: auto;
+ color: white;
+ background-color: #96d1bd ;
+ font-weight: 900;
+ font-size: 25px;
+ padding: 2%;
+ border: none;
+ text-align: center;
+ font-family: 'Didact Gothic', sans-serif;
+ box-sizing: border-box; }
+
+button:hover {
+ background-color: #96d1bd ; }
+
+h3 {
+ text-align: center;
+ color: #39474e ;
+ font-family: 'Didact Gothic', sans-serif;
+ font-size: 30px;
+ font-weight: bolder; }
+
+/*# sourceMappingURL=style.css.map *

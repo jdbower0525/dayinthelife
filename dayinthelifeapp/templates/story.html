@@ -1,10 +1,60 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        STORY OF IT ALL
-    </body>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link src ="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+   <link href ="{% static '/css/story.css' %}" type ="text/css" rel ="stylesheet">
+   <title></title>
+ </head>
+ <body>
+
+   <img class ="logo" src ="../../media/Dayinthelifelogo.png">
+
+   <main>
+     <h1>Story</h1>
+
+       <div class="border">
+         <section class ="paragraph">
+           <p>CONGRATULATIONS!!!! You made it through your first day at the</p>
+            <p>Iron Yard! </p>
+        <p>First, you got coffee, you met Lexi, one of our best visual</p>
+        <p>storytellers. You then mastered HTML and are now ready to </p>
+        <p>continue to learn!</p>
+
+         </section>
+       </div>
+
+    <a href="http://www.theironyard.com/raleigh.html"><button>Make this day a reality!</button></a>
+    <a href='/dayinthelifeapp/'><button>Start Over</button></a>
+
+   </main>
+   <script
+   src="https://code.jquery.com/jquery-3.1.1.min.js"
+   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+   crossorigin="anonymous"></script>
+   <script type="text/javascript" src="{% static 'js/story.js' %}"></script>
+ </body>
+</html>
+
+
+
+
+
+
+
+<html>
+   <head>
+       <meta charset="utf-8">
+       <title></title>
+   </head>
+   <body>
+       STORY OF IT ALL
+       <div id="coffeeId"></div>
+       <div id="allChoices"></div>
+   </body>
+   <input hidden id="studentid" value='{{user.id}}'>
+
+
 </html>

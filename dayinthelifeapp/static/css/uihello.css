@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'TisaPro-Bold';
+  src: url("../TisaPro-Bold.otf"); }
+body {
+  margin: 5%;
+  background-image: url("../../media/tileb.jpg");
+  background-size: contain; }
+
+.boardtext {
+  color: white;
+  font-family: "Didact Gothic", sans-serif;
+  position: absolute;
+  top: 23%;
+  left: 30%; }
+  .boardtext p {
+    font-size: 33px;
+    font-weight: bolder;
+    width: 250px; }
+
+#beforetext, #aftertext {
+  text-align: center; }
+
+#beforetext {
+  font-family: 'Times';
+  color: black;
+  font-size: 40px;
+  margin: 0px;
+  padding-top: 5%; }
+
+#aftertext {
+  font-size: 60px;
+  font-family: "TisaPro-Bold";
+  color: #96d1bd;
+  padding-top: 5%;
+  margin: 0px;
+  display: none; }
+
+.backtostart {
+  height: 130px;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 37%;
+  box-sizing: border-box; }
+
+.backtostart:hover {
+  border: 4px solid #62a6bb;
+  border-radius: 100%; }
+
+.ironlogo {
+  height: 140px;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 10%; }
+
+button {
+  height: 50px;
+  width: auto;
+  color: white;
+  background-color: #96d1bd;
+  font-weight: 900;
+  font-size: 25px;
+  padding: 2% 4%;
+  border: none;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif; }
+
+button:hover {
+  background-color: #39474e; }
+
+.helloworld {
+  font-size: 24px;
+  color: #39474e;
+  font-family: "Didact Gothic", sans-serif; }
+
+#lessoncomplete, .helloworld {
+  display: inline; }
+
+#lessoncomplete input {
+  border: 2px #96d1bd solid;
+  height: 30px;
+  font-size: 24px;
+  width: 65px; }
+
+#clickButton {
+  margin-top: 4%; }
+
+.enter {
+  height: 500px;
+  width: 650px;
+  margin: 0 auto;
+  background-image: url("../images/learnsam.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 15px solid #96d1bd;
+  position: relative; }
+
+form {
+  font-size: 30px;
+  color: #39474e; }
+
+form input {
+  border: 2px solid #96d1bd;
+  padding-left: 1%; }
+
+.adventureoptions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .adventureoptions .enterbuilding {
+    height: 550px;
+    width: 650px;
+    border: 5px solid #39474e;
+    font-weight: 600;
+    text-align: center;
+    margin: 5%;
+    background-color: white; }
+    .adventureoptions .enterbuilding .lesson {
+      text-align: left;
+      padding-left: 2%;
+      font-size: 24px;
+      line-height: 1.6;
+      font-family: "Didact Gothic", sans-serif;
+      color: #39474e; }
+
+#wrong {
+  color: #39474e;
+  font-size: 20px;
+  padding: 1%;
+  background-color: white;
+  border: 4px solid #39474e;
+  font-family: "TisaPro-Bold";
+  box-shadow: 10px 10px 5px #888888;
+  width: 350px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 5%;
+  z-index: 400;
+  display: none; }
+  #wrong button {
+    margin: 4%; }
+
+#right {
+  margin: 0 auto;
+  color: #96d1bd;
+  font-size: 25px;
+  padding: 1%;
+  background-color: white;
+  border: 4px solid #96d1bd;
+  font-family: "TisaPro-Bold";
+  box-shadow: 10px 10px 5px #888888;
+  width: 350px;
+  padding: 5%;
+  margin-top: 2%;
+  z-index: 400;
+  display: none; }
+  #right button {
+    margin: 4%; }
+
+/*# sourceMappingURL=helloworld.css.map */
