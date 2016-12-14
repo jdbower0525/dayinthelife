@@ -5,13 +5,13 @@ from django.contrib.auth.models import User
 
 
 class Choice(models.Model):
-    # text = models.CharField(max_length=255)
+    text = models.CharField(max_length=255)
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 
 class Student(models.Model):
-    choices = models.ManyToManyField(Choice)
+    choices = models.CharField(default='', max_length=255)
     user = models.OneToOneField(User)
 
     def __str__(self):

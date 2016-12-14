@@ -19,6 +19,9 @@ from django.conf.urls import url, include
 from rest_framework import routers
 from dayinthelifeapp import views
 import dayinthelifeapp
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 router = routers.DefaultRouter()
 router.register(r'api/student', views.StudentViewSet),
@@ -34,3 +37,7 @@ urlpatterns = [
     url(r'^dayinthelifeapp/', include('dayinthelifeapp.urls')),
     url(r'^admin/', admin.site.urls),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)

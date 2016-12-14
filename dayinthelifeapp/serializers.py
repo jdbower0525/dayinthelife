@@ -11,7 +11,6 @@ class ChoiceSerializer(serializers.ModelSerializer):
 
 
 class StudentSerializer(serializers.ModelSerializer):
-    # choices = ChoiceSerializer(many=True)
     class Meta:
         model = Student
         fields = ['id', 'user', 'url', 'choices']

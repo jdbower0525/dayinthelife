@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
-    <head>
+    <html lang="en">
+      <head>
         <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        home page
-        <button id="add_choice">Add Choice</button>
-        <a href='/dayinthelifeapp/gotoclass'>gotoclass</a>
-        <a href='/dayinthelifeapp/coffee'>coffee</a>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lina's Hackathon Pages</title>
+        <link rel="stylesheet" href= "https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+        <link rel="stylesheet" href="{% static '/css/index.css' %}">
+      </head>
+      <body>
+      <section>
+        <img class="ironlogo" src="../../media/Dayinthelifelogo.png">
+        <div class="enter">
+          <div class="welcometext">
+            <p class="stilltitletext">Welcome to your first day<br>
+          at The Iron Yard!</p>
+          </div>
+        </div>
+      </section>
+        <div class="adventureoptions">
+          <div class="enterbuilding">
+            <p> I'm ready, let's do this! </p>
+            <a href='/dayinthelifeapp/gotoclass'><button>Come on in!</button></a>
+          </div>
+          <div class="coffee">
+            <p> Cool,<br> but I need some coffee first! </p>
+            <a href='/dayinthelifeapp/gotoclass'><button>Caffeinate</button></a>
+          </div>
+        </div>
+      <footer> <button hidden class="startagain">Start Again</button></footer>
+        <input hidden id="studentid" value='{{user.id}}'>
+
     </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="{% static '/js/ditl.js' %}"></script>
 

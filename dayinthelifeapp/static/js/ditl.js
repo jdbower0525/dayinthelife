@@ -29,25 +29,37 @@ $.ajaxSetup({
     }
 });
 
-function doThings(){
-    id = 1
-    var patchData = {
-        user: 1,
-        choices: [1,2,3]
-}
-    // var patchData = new FormData();
-    // form.append("user", "1");
-    // form.append("choices", "1");
-    // form.append("choices", "4");
+// function doThings(){
+//     id = 1
+//     var patchData = {
+//         user: 1,
+//         choices: [1,2,3]
+// }
+//     // var patchData = new FormData();
+//     // form.append("user", "1");
+//     // form.append("choices", "1");
+//     // form.append("choices", "4");
+//
+//
+//     var ajaxdata = {
+//         url: '/api/student/' + id + '/',
+//         data: { user: 1, choice: [1,2] },
+//         dataType: 'application/json',
+//         type: 'PUT'
+//     }
+//     console.log(ajaxdata)
+//     $.ajax(ajaxdata).done(function(results){console.log(results)})
+// }
 
-
-    var ajaxdata = {
-        url: '/api/student/' + id + '/',
-        data: { user: 1, choice: [1,2] },
-        dataType: 'application/json',
-        type: 'PUT'
-    }
-    console.log(ajaxdata)
-    $.ajax(ajaxdata).done(function(results){console.log(results)})
+function list_choices(){
+    $.getJSON( "/api/student/", function ( student ) {
+        var student_id = $('#studentid').val()
+        console.log(student_id)
+        console.log(student.results[student_id-1].choices)
+        choice1 = 'class'
+        if(student.results[student_id-1].choices == choice1){
+            console.log('summary')
+        }
+    })
 }
-doThings()
+list_choices()

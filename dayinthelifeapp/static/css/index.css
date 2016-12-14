@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'TisaPro-Bold';
+  src: url("../Tisa/TisaPro-Bold.otf"); }
+html {
+  margin: 5%;
+  background-image: url("../../media/asanoha.png"); }
+
+.backtostart {
+  height: 130px;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 37%;
+  box-sizing: border-box; }
+
+.backtostart:hover {
+  border: 4px solid #62a6bb;
+  border-radius: 100%; }
+
+.ironlogo {
+  height: 140px;
+  width: auto;
+  position: absolute;
+  left: 10%;
+  top: 10%; }
+
+button {
+  height: 50px;
+  width: auto;
+  color: white;
+  background-color: #96d1bd;
+  font-weight: 900;
+  font-size: 25px;
+  padding: 2% 4%;
+  border: none;
+  text-align: center;
+  font-family: "Didact Gothic", sans-serif; }
+
+button:hover {
+  background-color: #39474e; }
+
+.enter {
+  height: 500px;
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  background: linear-gradient(rgba(57, 71, 78, 0.5), rgba(57, 71, 78, 0.5)), url("../../media/ironyarddoor.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 15px solid #96d1bd; }
+  .enter .welcometext {
+    color: white;
+    padding-left: 2%;
+    line-height: .8;
+    font-size: 40px;
+    font-family: "TisaPro-Bold";
+    position: absolute;
+    top: 63%;
+    margin: 0px; }
+    .enter .welcometext .stilltitletext {
+      margin: 0px;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      line-height: 1.8;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+.adventureoptions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .adventureoptions .enterbuilding {
+    height: 250px;
+    width: 320px;
+    font-weight: 600;
+    text-align: center;
+    border: 5px solid #39474e;
+    margin: 2%;
+    box-sizing: border-box;
+    background-color: white;
+    background-size: contain; }
+    .adventureoptions .enterbuilding p {
+      text-align: center;
+      padding: 10% 1%;
+      font-size: 24px;
+      font-family: "Didact Gothic", sans-serif;
+      color: #39474e; }
+  .adventureoptions .coffee {
+    height: 250px;
+    width: 320px;
+    border: 5px solid #39474e;
+    font-weight: 600;
+    text-align: center;
+    margin: 2%;
+    box-sizing: border-box;
+    background-color: white;
+    background-size: contain; }
+    .adventureoptions .coffee p {
+      text-align: center;
+      padding: 5.5% 1%;
+      font-size: 24px;
+      font-family: "Didact Gothic", sans-serif;
+      color: #39474e; }
+
+footer .startagain {
+  position: relative;
+  bottom: 0%;
+  left: 43%;
+  padding: 1%; }
+
+/*# sourceMappingURL=style.css.map */
